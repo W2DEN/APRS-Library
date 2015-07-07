@@ -305,6 +305,7 @@ void afsk_start()
   if (pttPin) {
     // Key the radio
     // Configure pins
+	 // corerected this to an output not sure why it was an input
     pinMode(pttPin, OUTPUT); /////////////////////////////////////
 	 digitalWrite(pttPin, HIGH);
     delay(pttDelay);
