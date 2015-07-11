@@ -1,4 +1,3 @@
 # APRS-Library
 Libraries for the APRS Project
-The Bounce library is included here for completeness. It comes from the Teensy/AVR/Libraires folder.
-
+IDE included libraries, such as Bounce, are not included but will be documented eventually.
