@@ -73,11 +73,11 @@ void logBuffer(const uint8_t * const buf, const int bitsSent,
 {
   Serial.printf("Bits in packet %d: ", bitsSent);
   Serial.print(dayOfMonth);
-  Serial.print(',');
+  Serial.print('-');
   Serial.print(hour);
-  Serial.print(',');
+  Serial.print(':');
   Serial.print(min);
-  Serial.print(',');
+  Serial.print(':');
 
   uint8_t frameState = 0; // 0-No start, 1-start, 2-in header, 3-In info
   uint8_t bSoFar = 0x00;
@@ -153,6 +153,7 @@ void aprs_setup(const uint16_t p_preambleFlags, const uint8_t pttPin,
 // begin.
 // In PTT mode the pin given will be raised high, and then PTT_DELAY ms later, the packet will
 // begin
+
 void aprs_send(const PathAddress * const paths, const int nPaths,
     const uint8_t dayOfMonth, const uint8_t hour, const uint8_t min,
     const float lat,

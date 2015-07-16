@@ -27,7 +27,7 @@
 
 struct PathAddress
 {
-  const char *callsign;
+  const char* callsign;
   uint8_t ssid;
 };
 
