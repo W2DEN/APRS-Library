@@ -20,6 +20,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ * W2DEN:
+ * struct PathAddress ssid changed to signed in for menu compatability
  */
 
 #ifndef __APRS_H__
@@ -28,7 +30,7 @@
 struct PathAddress
 {
   const char* callsign;
-  uint8_t ssid;
+  int8_t ssid; // changed from uint8_t to int8_t w2den
 };
 
 void aprs_setup(const uint16_t preambleFlags, // number of preambleFlags to send, must be at least 1 to frame packet
